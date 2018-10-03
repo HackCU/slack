@@ -1,0 +1,7 @@
+workspace.xml
+/website/nbproject/private/
+*.swp
+Thumbs.db
+.idea/*
+.DS_Store
+_site
