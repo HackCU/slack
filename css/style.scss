@@ -7,12 +7,17 @@
 ////////////////////////////////////////
 
 // Fonts
-$font: sans-serif;
+$font: Biko, sans-serif;
 
 
 // Images
 $img: url(../img/flatirons.jpg);
 
+
+@font-face {
+    font-family: Biko;
+    src: url('../assets/fonts/Biko_Regular.otf');
+  }
 
 
 html {
