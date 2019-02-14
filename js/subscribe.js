@@ -37,14 +37,20 @@ function register($form) {
             console.error("Could not connect to the registration server. Please try again later.");
         },
         success: function (data) {
-            if (!data.ok) {
-                statusMessage.innerHTML = "There was an error. You may have already signed up!";
+            if (!data.ok && data.error=="already_invited") {
+                statusMessage.innerHTML = "You have already joined! Redirecting you to the Slack group...";
+                statusMessage.style.color = 'white';
+                setTimeout(function() {
+                    window.location = "https://hackcu.slack.com";
+                },1200)
+            } else if (!data.ok){
+                statusMessage.innerHTML = "There was an error. Please reach out to us to solve this!";
                 statusMessage.style.color = 'pink';
             } else {
                 document.getElementById('mce-EMAIL').style.display = 'none';
                 document.getElementById('mc-embedded-subscribe').style.display = 'none';
-                statusMessage.innerHTML = "Success! You will be notified when applications open."
-                statusMessage.style.color = '#5bc0de';
+                statusMessage.innerHTML = "Success! You should receive an email soon!"
+                statusMessage.style.color = 'white';
             }
         }
     });

@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "../_sass/mixins";
+
 /* Font*/ 
 $font-stack:    Biko, sans-serif, "Times New Roman";
 $text-color:    #ffffff;
@@ -115,13 +117,19 @@ h5 {
 .fa {
     color: $text-color;
     margin: 0.5em;
+    @include transition(0.3s ease);
     &:hover {
-        color: darken($text-color, 20%);
+        color: rgba($text-color, 0.5);
     }
 }
 
+a {
+    color: $text-color;
+    @include transition(0.3s ease);
+}
+
 a:hover {
-    color: darken($text-color, 20%);
+    color: rgba($text-color, 0.5);
 }
 
 .title {
