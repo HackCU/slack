@@ -1,10 +1,11 @@
+
 <br>
 <p align="center">
   <img alt="HackCU V" src="https://github.com/HackCU/splash-page/blob/master/img/hackcu_black.png" width="200"/>
 </p>
 <br>
 
-Off-season static page for HackCU. Allows users to subscribe to email list to be notified when applications get released.
+Sign up page for [HackCU Slack](https://hackcu.slack.com). 
 
 # Run project
 
@@ -40,3 +41,4 @@ Please read our [Code of Conduct](.github/CODE_OF_CONDUCT.md), then follow these
 # License
 
 MIT © HackCU
+

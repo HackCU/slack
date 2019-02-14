@@ -19,6 +19,4 @@
 - Others:
 
 (Optional)
-- Ruby version (e.g. `ruby --version`)
 - OS (e.g. from /etc/os-release):
-- Jekyll version (e.g. `jekyll --version`):
