@@ -13,7 +13,7 @@ Needs: Ruby, `bundle`
 
 ## Local 
 
-1. `git clone https://github.com/hackcu/splash-page && cd splash-page`
+1. `git clone https://github.com/hackcu/slack && cd slack`
 2. `bundle install`
 3. `bundle exec jekyll serve --watch`
 
